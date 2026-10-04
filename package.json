@@ -1,6 +1,6 @@
 {
   "name": "@gbesse/jev-balo-material-event",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transforme une annonce BALO en événement d’entreprise structuré et signale les changements potentiellement significatifs.",
   "type": "module",
   "license": "MIT",
