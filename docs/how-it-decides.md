@@ -2,7 +2,7 @@
 
 Transforme une annonce BALO en événement d’entreprise structuré et signale les changements potentiellement significatifs.
 
-Le code normalise la source et applique d’abord le cas déterministe documenté dans `src/index.mjs`. Pour les autres dossiers, Jev choisit la catégorie la plus prudente selon la nature de l’opération, son effet possible sur le capital, la gouvernance ou les droits, et les éléments explicitement publiés. Une confiance inférieure à `0.8` marque le résultat pour revue humaine.
+Le code normalise la source et applique d’abord le cas déterministe documenté dans `src/index.mjs`. Pour les autres dossiers, Jev choisit la catégorie la plus prudente selon la nature de l’opération, son effet possible sur le capital, la gouvernance ou les droits, et les éléments explicitement publiés. Une confiance inférieure à `0.8`, la catégorie `review_required` ou une absence de données choisie par le modèle marque le résultat pour revue humaine. Une collection vide explicitement fournie reste un résultat déterministe sans appel Jev.
 
 Les montants, dates, identifiants et calculs de variation restent traités par le code.
 
